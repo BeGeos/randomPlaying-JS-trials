@@ -1,0 +1,43 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 1.25em 1.75em;
+  min-width: 120px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-weight: 700;
+  border-radius: 100vw;
+  cursor: pointer;
+  z-index: 99;
+}
+button:hover {
+  background-color: purple;
+  opacity: 0.8;
+}
+
+.random-ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
